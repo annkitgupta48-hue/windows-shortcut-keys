@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows Shortcut Keys</title>
+  <style>
+    :root { --ink:#17221f; --muted:#68736e; --paper:#f6f4ed; --card:#fffdf8; --line:#dfe3d9; --green:#1e6652; --deep:#123b32; --lime:#d7f36b; --orange:#ee815c; --blue:#dcecf0; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at 10% 0%,#fffdf2 0 18%,transparent 42%),linear-gradient(135deg,#f7f5ee 0%,#e1eee8 100%); font-family: "Segoe UI", "Nirmala UI", sans-serif; }
+    .shell { max-width:1240px; margin:auto; padding:42px 22px 60px; }
+    header { display:flex; justify-content:space-between; gap:28px; align-items:end; margin-bottom:28px; }
+    .eyebrow { color:var(--green); font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:12px; }
+    h1 { font-family:Georgia,serif; font-size:clamp(38px,6vw,72px); line-height:.95; max-width:680px; margin:10px 0 14px; letter-spacing:-2px; }
+    .intro { color:var(--muted); max-width:620px; font-size:16px; line-height:1.55; margin:0; }
+    .badge { background:var(--lime); padding:15px 17px; border-radius:18px; font-weight:800; min-width:165px; text-align:center; box-shadow:5px 5px 0 #b4d344; transform:rotate(2deg); }
+    .hero-note { display:inline-flex; gap:8px; align-items:center; margin-top:18px; color:var(--green); background:rgba(255,255,255,.7); border:1px solid var(--line); border-radius:999px; padding:8px 13px; font-size:13px; font-weight:700; }
+    .toolbar { position:sticky; top:12px; z-index:4; background:rgba(255,253,248,.92); backdrop-filter:blur(14px); border:1px solid var(--line); padding:15px; border-radius:18px; box-shadow:0 14px 35px rgba(40,63,48,.1); margin-bottom:25px; }
+    .searchline { display:flex; gap:10px; }
+    input { width:100%; border:2px solid #cfd8cc; border-radius:11px; padding:13px 15px; background:white; color:var(--ink); font-size:16px; outline:none; }
+    input:focus { border-color:var(--green); box-shadow:0 0 0 3px rgba(30,102,82,.12); }
+    button { border:0; border-radius:10px; padding:0 17px; background:var(--green); color:white; font-weight:700; cursor:pointer; min-height:46px; transition:transform .2s ease,background .2s ease,box-shadow .2s ease; }
+    button:hover { background:#124937; transform:translateY(-2px); box-shadow:0 5px 12px rgba(18,73,55,.2); }
+    .filters { display:flex; gap:8px; margin-top:11px; overflow-x:auto; padding:2px 2px 7px; scrollbar-width:thin; }
+    .filter { flex:0 0 auto; white-space:nowrap; background:#edf0e9; color:var(--ink); min-height:34px; padding:0 12px; font-size:13px; }
+    .filter.active { background:var(--orange); color:white; }
+    .meta { color:var(--muted); font-size:13px; margin:11px 2px 0; }
+    main { display:grid; grid-template-columns:repeat(auto-fit,minmax(350px,1fr)); gap:19px; }
+    section { background:rgba(255,253,248,.96); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 8px 25px rgba(40,63,48,.06); animation:rise .45s ease both; transition:transform .25s ease,box-shadow .25s ease; }
+    section:hover { transform:translateY(-4px); box-shadow:0 17px 34px rgba(40,63,48,.13); }
+    section h2 { font-size:17px; margin:0; padding:17px 18px; background:linear-gradient(100deg,#eef4e9,#f4f7e8); border-bottom:1px solid var(--line); }
+    .row { display:grid; grid-template-columns:minmax(132px, .8fr) 1fr auto; align-items:center; gap:12px; padding:13px 16px; border-bottom:1px solid #edf0ea; min-height:68px; transition:background .2s ease,transform .2s ease; }
+    .row:hover { background:#f5f9ee; transform:translateX(3px); }
+    .row:last-child { border-bottom:0; }
+    kbd { display:inline-block; background:#202d29; color:#f7f5ee; border-radius:6px; padding:6px 8px; font-family:Consolas,monospace; font-size:12px; line-height:1.25; box-shadow:0 2px 0 #0d1512; }
+    .desc { font-size:14px; line-height:1.35; }
+    .desc-label { display:block; color:var(--green); font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; margin-bottom:3px; }
+    .copy { min-height:30px; padding:0 8px; background:#e7eee5; color:var(--green); font-size:12px; }
+    .copy:hover { background:var(--lime); color:var(--ink); }
+    .empty { grid-column:1/-1; text-align:center; padding:45px 20px; background:var(--card); border:1px dashed #b9c6b8; border-radius:15px; color:var(--muted); }
+    footer { color:var(--muted); text-align:center; margin-top:33px; font-size:13px; }
+    @keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+    @media (max-width:650px) { .shell { padding:28px 13px 42px; } header { display:block; } .badge { display:inline-block; margin-top:20px; } .row { grid-template-columns:1fr auto; gap:7px; } .row kbd { grid-column:1/-1; width:max-content; } .desc { grid-column:1; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <div class="eyebrow">⚡ Desktop cheat sheet</div>
+        <h1>Windows<br>Shortcut Keys</h1>
+        <p class="intro">200+ Windows, browser और daily-work shortcuts एक जगह। सबसे ज़रूरी keys ऊपर हैं। Search करें, category चुनें और किसी भी key को copy करने के लिए छोटा button दबाएँ।</p>
+        <div class="hero-note">↗ पहले ⭐ section से शुरू करें · रोज़ के shortcuts पहले से prioritized हैं</div>
+      </div>
+      <div class="badge">⌨️ Fast<br>Work Better</div>
+    </header>
+    <div class="toolbar">
+      <div class="searchline">
+        <input id="search" type="search" placeholder="🔎  जैसे: screenshot, copy, lock..." aria-label="Shortcuts खोजें">
+        <button id="clear" type="button">Clear</button>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="meta" id="meta"></div>
+    </div>
+    <main id="content"></main>
+    <footer>💡 Tip: Win + V दबाकर Clipboard history पहली बार enable करें।</footer>
+  </div>
+<script>
+const groups = [
+  { name:'⭐ रोज़मर्रा में सबसे ज़्यादा इस्तेमाल', icon:'⭐', items:[
+    ['Ctrl + C','Copy'],['Ctrl + X','Cut'],['Ctrl + V','Paste'],['Ctrl + Z','Undo'],['Ctrl + Y','Redo'],['Ctrl + A','सब कुछ select'],['Ctrl + S','Save'],['Ctrl + F','Find / Search'],['Ctrl + P','Print'],['Ctrl + N','नई window/document'],['Ctrl + W','Current tab/window बंद'],['Alt + Tab','Open apps बदलें'],['Alt + F4','Active app बंद'],['Win + D','Desktop दिखाएँ'],['Win + E','File Explorer'],['Win + I','Settings'],['Win + L','PC lock'],['Win + R','Run dialog'],['Win + Shift + S','Area screenshot'],['Ctrl + Shift + Esc','Task Manager'] ]},
+  { name:'⊞ Windows Key Shortcuts', icon:'⊞', items:[
+    ['Win','Start menu'],['Win + A','Quick Settings / notifications'],['Win + B','System tray पर focus'],['Win + C','Copilot (यदि उपलब्ध हो)'],['Win + D','Desktop show/hide'],['Win + E','File Explorer'],['Win + G','Xbox Game Bar'],['Win + H','Voice typing'],['Win + K','Cast / wireless devices'],['Win + N','Notifications और calendar'],['Win + P','Display/project mode'],['Win + Q / S','Search'],['Win + U','Accessibility settings'],['Win + V','Clipboard history'],['Win + W','Widgets'],['Win + X','Quick Link menu'],['Win + Z','Snap layouts'],['Win + .','Emoji, GIF और symbols panel'],['Win + ;','Emoji, GIF और symbols panel'],['Win + Space','Keyboard language बदलें'],['Win + 1 ... 9','Taskbar के क्रम का app'],['Win + T','Taskbar पर focus'],['Win + Shift + S','Screen का area capture'],['Win + Shift + M','Minimized windows restore'],['Win + Home','बाकी windows minimize'] ]},
+  { name:'🖥️ Windows, Desktop & Multitasking', icon:'🖥️', items:[
+    ['Win + Up','Window maximize'],['Win + Down','Minimize / restore'],['Win + Left','बाईं ओर snap'],['Win + Right','दाईं ओर snap'],['Win + Shift + Left','Window को left monitor भेजें'],['Win + Shift + Right','Window को right monitor भेजें'],['Win + Tab','Task View'],['Win + Ctrl + D','नया virtual desktop'],['Win + Ctrl + Left','बाएँ virtual desktop'],['Win + Ctrl + Right','दाएँ virtual desktop'],['Win + Ctrl + F4','Current virtual desktop बंद'],['Alt + Tab','Apps switcher'],['Alt + Esc','Open order में switch'],['Alt + Space','Active window menu'],['Ctrl + Alt + Tab','App switcher स्थिर रखें'],['F11','Full screen (कई apps में)'],['Win + Ctrl + Shift + B','Graphics driver refresh'] ]},
+  { name:'📁 File Explorer & Files', icon:'📁', items:[
+    ['Ctrl + N','नई Explorer window'],['Ctrl + Shift + N','नया folder'],['Ctrl + W','Explorer window बंद'],['Ctrl + L / Alt + D','Address bar select'],['Ctrl + E / Ctrl + F','Search box select'],['Alt + Left','Back'],['Alt + Right','Forward'],['Alt + Up','Parent folder'],['F2','Rename'],['F5 / Ctrl + R','Refresh'],['Delete','Recycle Bin में भेजें'],['Shift + Delete','Permanent delete ⚠️'],['Alt + Enter','Properties'],['Shift + F10','Context menu'],['Ctrl + Mouse wheel','Icon size बदलें'],['Ctrl + 0','Folder view default'],['Alt + P','Preview pane'],['Alt + Shift + P','Details pane'],['Ctrl + 1 ... 8','View style चुनें'],['Ctrl + 9','Extra-large icons view'] ]},
+  { name:'✎ Text Editing & Selection', icon:'✎', items:[
+    ['Home','Line की शुरुआत'],['End','Line का अंत'],['Ctrl + Home','Document की शुरुआत'],['Ctrl + End','Document का अंत'],['Arrow keys','Cursor move'],['Ctrl + Left / Right','एक शब्द पीछे / आगे'],['Ctrl + Up / Down','एक paragraph ऊपर / नीचे'],['Shift + Arrow','Text select'],['Ctrl + Shift + Arrow','एक शब्द select'],['Shift + Home / End','Line select'],['Ctrl + Shift + Home / End','Document का हिस्सा select'],['Backspace','Left character delete'],['Delete','Right character delete'],['Ctrl + Backspace','Previous word delete'],['Ctrl + Delete','Next word delete'],['Insert','Overwrite mode toggle'],['Ctrl + B','Bold'],['Ctrl + I','Italic'],['Ctrl + U','Underline'] ]},
+  { name:'🌐 Browser & Web', icon:'🌐', items:[
+    ['Ctrl + T','नया tab'],['Ctrl + Shift + T','बंद tab फिर खोलें'],['Ctrl + W','Current tab बंद'],['Ctrl + Shift + W','Browser window बंद'],['Ctrl + Tab','अगला tab'],['Ctrl + Shift + Tab','पिछला tab'],['Ctrl + 1 ... 8','उस क्रम का tab'],['Ctrl + 9','Last tab'],['Ctrl + L / Alt + D','Address bar'],['Alt + Left','Back'],['Alt + Right','Forward'],['Alt + Home','Home page'],['Ctrl + D','Bookmark'],['Ctrl + Shift + B','Bookmarks bar show/hide'],['Ctrl + J','Downloads'],['Ctrl + H','History'],['Ctrl + Shift + Delete','Clear browsing data'],['Ctrl + R / F5','Refresh'],['Ctrl + Shift + R','Hard refresh'],['Esc','Page loading रोकें'],['Ctrl + Plus','Zoom in'],['Ctrl + Minus','Zoom out'],['Ctrl + 0','Zoom reset'],['F6','Page areas में focus'],['Ctrl + U','Page source'],['Ctrl + Shift + I','Developer tools'] ]},
+  { name:'😀 Emoji, Symbols & Input', icon:'😀', items:[
+    ['Win + . (period)','Emoji panel खोलें'],['Win + ; (semicolon)','Emoji panel खोलें'],['Win + . → Emoji','Emoji चुनें'],['Win + . → Kaomoji','Kaomoji चुनें'],['Win + . → Symbols','Symbols चुनें'],['Win + V','Clipboard history'],['Win + H','Voice typing'],['Win + Space','Language / keyboard बदलें'],['Alt + Shift','Input language बदलें'],['Ctrl + Shift','Keyboard layout बदलें (कुछ apps)'],['Win + Ctrl + Space','Emoji/symbol input (कुछ layouts)'],['Win + Ctrl + Enter','Narrator toggle'] ]},
+  { name:'📸 Screenshots, Display & Recording', icon:'📸', items:[
+    ['PrtScn','पूरी screen clipboard में copy'],['Alt + PrtScn','Active window copy'],['Win + PrtScn','Screenshot save'],['Win + Shift + S','Snipping Tool area capture'],['Win + G','Game Bar खोलें'],['Win + Alt + R','Game Bar recording start/stop'],['Win + Alt + PrtScn','Game Bar screenshot'],['Win + P','Duplicate / Extend display'],['Win + K','Wireless display/connect'],['Win + Plus','Magnifier zoom in'],['Win + Minus','Magnifier zoom out'],['Win + Esc','Magnifier बंद'],['Ctrl + Alt + Arrow','Display rotate (यदि driver support करे)'] ]},
+  { name:'⚙ System, Run & Power', icon:'⚙', items:[
+    ['Ctrl + Alt + Delete','Security screen'],['Win + X','Admin / Power User menu'],['Alt + F4 (desktop)','Shutdown options'],['Win + X, U, U','Shut down'],['Win + X, U, R','Restart'],['Win + X, U, S','Sleep (system पर निर्भर)'],['Win + R → winver','Windows version'],['Win + R → taskmgr','Task Manager'],['Win + R → cmd','Command Prompt'],['Win + R → powershell','PowerShell'],['Win + R → control','Classic Control Panel'],['Win + R → appwiz.cpl','Installed programs'],['Win + R → devmgmt.msc','Device Manager'],['Win + R → diskmgmt.msc','Disk Management'],['Win + R → services.msc','Services'],['Win + R → cleanmgr','Disk Cleanup'],['Win + R → msconfig','System Configuration'],['Win + R → mstsc','Remote Desktop'],['Win + R → calc','Calculator'],['Win + R → notepad','Notepad'],['Win + R → mspaint','Paint'] ]},
+  { name:'♿ Accessibility', icon:'♿', items:[
+    ['Win + U','Accessibility settings'],['Win + Ctrl + Enter','Narrator on/off'],['Win + Ctrl + O','On-screen keyboard'],['Win + H','Voice typing'],['Win + Plus','Magnifier'],['Win + Minus','Magnifier zoom out'],['Win + Esc','Magnifier close'],['Left Alt + Left Shift + PrtScn','High Contrast toggle'],['Shift × 5','Sticky Keys toggle'],['Right Shift × 8 sec','Filter Keys toggle'],['Num Lock × 5 sec','Toggle Keys toggle'],['Left Alt + Left Shift + Num Lock','Mouse Keys toggle'] ]},
+  { name:'📝 Microsoft Office & Common Apps', icon:'📝', items:[
+    ['Ctrl + K','Hyperlink insert'],['Ctrl + Enter','Page break / submit'],['Ctrl + Shift + V','Paste without formatting (support पर निर्भर)'],['Ctrl + Shift + S','Save As'],['F4','Last action repeat'],['F7','Spelling / grammar check'],['F12','Save As (Office)'],['Ctrl + Shift + 7','Numbered list (Office)'],['Ctrl + Shift + 8','Bulleted list (Office)'],['Ctrl + Shift + >','Font size बढ़ाएँ'],['Ctrl + Shift + <','Font size घटाएँ'],['Ctrl + E','Center align'],['Ctrl + L','Left align'],['Ctrl + R','Right align'],['Ctrl + J','Justify'],['Ctrl + Shift + C','Copy formatting (Office)'],['Ctrl + Shift + V','Paste formatting (Office)'] ]},
+  { name:'🛠️ Function Keys & Hardware', icon:'🛠️', items:[
+    ['F1','Help खोलें'],['F2','Rename / edit cell'],['F3','Search (कुछ apps)'],['F4','Address bar list / repeat'],['F5','Refresh'],['F6','Screen elements बदलें'],['F7','Spell check / caret browsing'],['F8','Startup options (कुछ systems)'],['F9','Refresh fields (Office)'],['F10','Menu bar activate'],['F11','Full screen'],['F12','Developer tools / Save As'],['Fn + F1 ... F12','Laptop hardware actions (model पर निर्भर)'],['Fn + Esc','Fn Lock (कुछ laptops)'] ]}
+];
+const content = document.querySelector('#content'), filters = document.querySelector('#filters'), search = document.querySelector('#search'), meta = document.querySelector('#meta');
+let active = 'सभी';
+const clearDescriptions = new Map([
+  ['Ctrl + C','चुने हुए text, file या item की copy clipboard में बनाता है।'],
+  ['Ctrl + X','चुने हुए text या file को उसकी जगह से हटाकर clipboard में रखता है, ताकि दूसरी जगह move कर सकें।'],
+  ['Ctrl + V','Clipboard में रखी चीज़ को cursor या चुनी हुई जगह पर paste करता है।'],
+  ['Ctrl + Z','अभी किया गया आख़िरी बदलाव वापस लेता है। गलती सुधारने का सबसे तेज़ तरीका।'],
+  ['Ctrl + Y','Undo किए गए बदलाव को फिर से लागू करता है।'],
+  ['Ctrl + A','Current page, document या folder में मौजूद सभी items को एक साथ select करता है।'],
+  ['Ctrl + S','Current document या project को तुरंत save करता है, ताकि काम खो न जाए।'],
+  ['Ctrl + F','Current page, document या list में कोई शब्द या item खोजने का box खोलता है।'],
+  ['Ctrl + P','Current page या document को print करने का dialog खोलता है।'],
+  ['Alt + Tab','खुले हुए apps के बीच तुरंत switch करता है; key दबाए रखते हुए सही app चुनें।'],
+  ['Alt + F4','जिस app या window पर काम कर रहे हैं उसे बंद करता है। Unsaved work पहले save करें।'],
+  ['Win + D','सभी windows को एक पल में hide करके desktop दिखाता है; फिर दबाने पर वापस लाता है।'],
+  ['Win + E','File Explorer खोलता है, जहाँ files और folders browse, search और manage कर सकते हैं।'],
+  ['Win + I','Windows Settings खोलता है, जहाँ display, sound, network और system options मिलते हैं।'],
+  ['Win + L','PC को तुरंत lock करता है, इसलिए थोड़ी देर दूर जाते समय data सुरक्षित रहता है।'],
+  ['Win + R','Run dialog खोलता है; इसमें commands जैसे `cmd`, `calc` या `notepad` जल्दी चला सकते हैं।'],
+  ['Win + Shift + S','Screen का केवल चुना हुआ हिस्सा capture करने के लिए Snipping Tool खोलता है।'],
+  ['Ctrl + Shift + Esc','Task Manager सीधे खोलता है, जहाँ apps बंद, performance और processes देख सकते हैं।'],
+  ['Win + . (period)','Emoji, kaomoji और symbols panel खोलता है; text लिखते समय emoji चुनें।'],
+  ['Win + ; (semicolon)','Emoji, kaomoji और symbols panel खोलता है; यह Win + period का दूसरा तरीका है।'],
+  ['Win + V','Clipboard history दिखाता है, जिससे पहले copy की गई चीज़ों में से कोई item फिर paste कर सकते हैं।'],
+  ['Win + H','Voice typing शुरू करता है; बोलकर text लिखने के लिए microphone का उपयोग करें।']
+]);
+function getClearDescription(key, description) {
+  return clearDescriptions.get(key) || description;
+}
+const categories = ['सभी', ...groups.map(group => group.name)];
+categories.forEach(category => { const button = document.createElement('button'); button.className = 'filter' + (category === active ? ' active' : ''); button.textContent = category; button.onclick = () => { active = category; render(); }; filters.append(button); });
+function render() {
+  const query = search.value.trim().toLowerCase();
+  content.innerHTML = '';
+  let shown = 0;
+  groups.forEach(group => {
+    if (active !== 'सभी' && active !== group.name) return;
+    const items = group.items.filter(([key, desc]) => !query || `${key} ${desc} ${group.name}`.toLowerCase().includes(query));
+    if (!items.length) return;
+    shown += items.length;
+    const section = document.createElement('section');
+    section.innerHTML = `<h2>${group.icon} ${group.name}</h2>`;
+    items.forEach(([key, desc]) => {
+      const row = document.createElement('div'); row.className = 'row';
+      const keyElement = document.createElement('kbd');
+      const descriptionElement = document.createElement('div');
+      const copyButton = document.createElement('button');
+      keyElement.textContent = key;
+      descriptionElement.className = 'desc';
+      const descriptionText = getClearDescription(key, desc);
+      const descriptionLabel = document.createElement('span');
+      descriptionLabel.className = 'desc-label';
+      descriptionLabel.textContent = 'क्या करता है';
+      descriptionElement.append(descriptionLabel, document.createTextNode(descriptionText));
+      copyButton.className = 'copy';
+      copyButton.title = 'Shortcut copy करें';
+      copyButton.textContent = 'Copy';
+      row.append(keyElement, descriptionElement, copyButton);
+      copyButton.onclick = async event => { await navigator.clipboard?.writeText(key); event.target.textContent = 'Copied ✓'; setTimeout(() => event.target.textContent = 'Copy', 1100); };
+      section.append(row);
+    });
+    content.append(section);
+  });
+  if (!shown) content.innerHTML = '<div class="empty">😅 कोई shortcut नहीं मिला। दूसरा keyword try करें।</div>';
+  meta.textContent = `${shown} shortcut${shown === 1 ? '' : 's'} दिख रहे हैं · ${groups.length} categories`;
+  document.querySelectorAll('.filter').forEach(button => button.classList.toggle('active', button.textContent === active));
+}
+search.addEventListener('input', render);
+document.querySelector('#clear').onclick = () => { search.value = ''; active = 'सभी'; render(); search.focus(); };
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+WINDOWS SHORTCUT KEYS - QUICK REFERENCE
+=========================================
+Tip: Win = Windows key | Ctrl = Control | Alt = Alternate | Shift = Uppercase/action modifier
+
+MOST USED
+---------
+Win + D              Desktop दिखाएँ / वापस लाएँ
+Win + E              File Explorer खोलें
+Win + I              Settings खोलें
+Win + L              PC lock करें
+Win + S              Search खोलें
+Win + R              Run dialog खोलें
+Win + Tab            Task View और virtual desktops
+Alt + Tab            खुले हुए apps के बीच बदलें
+Alt + F4             Active window/app बंद करें
+Ctrl + Shift + Esc   Task Manager खोलें
+Ctrl + C             Copy
+Ctrl + X             Cut
+Ctrl + V             Paste
+Ctrl + Z             पिछला action Undo
+Ctrl + Y             Redo
+Ctrl + A             सब कुछ Select करें
+Ctrl + F             Find/Search
+Ctrl + S             Save
+Ctrl + P             Print
+
+WINDOWS KEY SHORTCUTS
+---------------------
+Win                  Start menu खोलें
+Win + A              Quick Settings / notification panel
+Win + B              System tray पर focus
+Win + C              Copilot खोलें (यदि उपलब्ध हो)
+Win + D              Desktop दिखाएँ
+Win + E              File Explorer
+Win + F              Feedback Hub
+Win + G              Xbox Game Bar
+Win + H              Voice typing
+Win + K              Cast / wireless display या audio device
+Win + N              Notifications और calendar
+Win + P              Project/display mode चुनें
+Win + Q              Search
+Win + R              Run
+Win + U              Accessibility settings
+Win + V              Clipboard history (पहली बार enable करना होगा)
+Win + W              Widgets
+Win + X              Quick Link menu
+Win + Z              Snap layouts
+Win + . (period)     Emoji, symbols और GIF panel
+Win + ; (semicolon)  Emoji, symbols और GIF panel
+Win + Space          Keyboard language/input बदलें
+Win + Ctrl + D       नया virtual desktop बनाएँ
+Win + Ctrl + Left    बाएँ virtual desktop पर जाएँ
+Win + Ctrl + Right   दाएँ virtual desktop पर जाएँ
+Win + Ctrl + F4      वर्तमान virtual desktop बंद करें
+Win + Shift + S      Screen का चुना हुआ हिस्सा capture करें
+Win + Shift + M      Minimized windows restore करें
+Win + Shift + Left   Window को बाएँ monitor पर भेजें
+Win + Shift + Right  Window को दाएँ monitor पर भेजें
+Win + Home           Active window को छोड़कर बाकी minimize
+Win + T              Taskbar apps पर focus
+Win + 1 ... 9        Taskbar के क्रम अनुसार app खोलें/बदलें
+Win + Up              Window maximize
+Win + Down            Window minimize/restore
+Win + Left            Window को बाईं ओर snap करें
+Win + Right           Window को दाईं ओर snap करें
+Win + Ctrl + Shift + B Graphics driver refresh करें (screen blink हो सकती है)
+
+WINDOW MANAGEMENT & MULTITASKING
+---------------------------------
+Alt + Tab            Apps के बीच switch
+Alt + Esc             Windows को open होने के क्रम में switch
+Alt + Space           Active window का menu
+Alt + F4              Active window बंद
+Ctrl + Alt + Tab       सभी खुले apps का switcher स्थिर रखें
+Win + Tab              Task View
+Win + Z                Snap layout चुनें
+F11                   Full screen (कई apps/browsers में)
+
+FILE EXPLORER
+-------------
+Ctrl + N              नई Explorer window
+Ctrl + Shift + N      नया folder बनाएँ
+Ctrl + W              Current window बंद
+Ctrl + L / Alt + D    Address bar select
+Ctrl + E / Ctrl + F    Search box select
+Alt + Left             Back
+Alt + Right            Forward
+Alt + Up               Parent folder
+F2                    चुनी हुई file/folder rename
+F5                    Refresh
+Delete                 Recycle Bin में भेजें
+Shift + Delete         बिना Recycle Bin के delete (सावधानी)
+Alt + Enter            Properties
+Ctrl + Mouse wheel     Icons का आकार बदलें
+Shift + F10            Right-click context menu
+
+TEXT EDITING & BROWSER
+----------------------
+Ctrl + Left/Right      एक शब्द पीछे/आगे जाएँ
+Ctrl + Up/Down         एक paragraph ऊपर/नीचे
+Home                  Line की शुरुआत
+End                   Line का अंत
+Ctrl + Home            Document/page की शुरुआत
+Ctrl + End             Document/page का अंत
+Shift + Arrow          Text select करें
+Ctrl + Shift + Arrow   एक-एक शब्द select करें
+Backspace              बाएँ का character हटाएँ
+Ctrl + Backspace       पिछला शब्द हटाएँ
+Ctrl + T               Browser में नया tab
+Ctrl + W               Current tab बंद
+Ctrl + Shift + T       बंद tab फिर खोलें
+Ctrl + Tab             अगला tab
+Ctrl + Shift + Tab     पिछला tab
+Ctrl + L               Address bar
+Ctrl + D               Bookmark/favorite
+Ctrl + J               Downloads
+Ctrl + H               History
+Ctrl + R / F5           Page refresh
+Ctrl + Shift + R       Hard refresh (browser support)
+Ctrl + Plus (+)        Zoom in
+Ctrl + Minus (-)       Zoom out
+Ctrl + 0               Zoom reset
+F6                    Address bar/areas के बीच focus
+
+SCREENSHOTS, DISPLAY & ACCESSIBILITY
+-------------------------------------
+PrtScn                 पूरी screen clipboard में copy
+Alt + PrtScn           Active window clipboard में copy
+Win + PrtScn           Screenshot Pictures\Screenshots में save
+Win + Shift + S        Snipping Tool से area capture
+Win + P                Duplicate, Extend या दूसरे display modes
+Win + Plus (+)         Magnifier खोलें/zoom in
+Win + Minus (-)        Magnifier zoom out
+Win + Esc              Magnifier बंद
+Left Alt + Left Shift + Print Screen  High Contrast toggle (यदि enabled)
+Right Shift (8 sec)    Filter Keys toggle (यदि enabled)
+Shift (5 times)        Sticky Keys toggle (यदि enabled)
+
+SYSTEM & TROUBLESHOOTING
+------------------------
+Ctrl + Shift + Esc      Task Manager
+Ctrl + Alt + Delete      Security screen
+Win + X                 Admin/Power User menu
+Win + R, type cmd       Command Prompt
+Win + R, type powershell PowerShell
+Win + R, type ms-settings: Settings shortcut खोलें
+Win + R, type taskmgr  Task Manager
+Win + R, type appwiz.cpl Installed programs
+Win + R, type devmgmt.msc Device Manager
+Win + R, type diskmgmt.msc Disk Management
+Win + R, type cleanmgr  Disk Cleanup
+Win + R, type services.msc Services
+Win + R, type control   Classic Control Panel
+Win + R, type winver    Windows version देखें
+Win + Ctrl + Shift + B Graphics driver reset
+
+POWER & SECURITY
+----------------
+Win + L                तुरंत lock
+Ctrl + Alt + Delete     Lock, sign out, Task Manager आदि
+Alt + F4 (desktop)      Shutdown/restart options
+Win + X, U, U           Shut down (menu sequence)
+Win + X, U, R           Restart (menu sequence)
+Win + X, U, S           Sleep (menu sequence; system पर निर्भर)
+
+ACCESSIBILITY
+-------------
+Win + U                Accessibility settings
+Win + Ctrl + Enter      Narrator on/off
+Win + Ctrl + O          On-screen keyboard
+Win + Ctrl + S          Windows Speech Recognition (कुछ versions में)
+Win + H                Voice typing
+Win + Plus (+)          Magnifier
+Win + Esc               Magnifier बंद
+
+EMOJI, SYMBOLS & INPUT
+----------------------
+Win + . (period)        Emoji panel खोलें
+Win + ; (semicolon)     Emoji panel खोलें
+Win + . → Emoji         Emoji चुनें
+Win + . → Kaomoji       Kaomoji चुनें
+Win + . → Symbols       Symbols चुनें
+Win + V                 Clipboard history
+Win + H                 Voice typing
+Win + Space             Keyboard language बदलें
+Alt + Shift             Input language बदलें
+Ctrl + Shift            Keyboard layout बदलें (कुछ apps में)
+
+MORE WINDOW & DESKTOP SHORTCUTS
+-------------------------------
+Win + B                 System tray पर focus
+Win + C                 Copilot (यदि उपलब्ध हो)
+Win + N                 Notifications और calendar
+Win + Q / Win + S       Search
+Win + Z                 Snap layouts
+Win + T                 Taskbar पर focus
+Win + Shift + M         Minimized windows restore
+Win + Home              बाकी windows minimize
+Win + Shift + Left      Window को left monitor भेजें
+Win + Shift + Right     Window को right monitor भेजें
+Win + Tab               Task View
+Win + Ctrl + D           नया virtual desktop
+Win + Ctrl + Left        बाएँ virtual desktop
+Win + Ctrl + Right       दाएँ virtual desktop
+Win + Ctrl + F4          Current virtual desktop बंद
+Alt + Esc                Open order में switch
+Alt + Space              Active window menu
+Ctrl + Alt + Tab          App switcher स्थिर रखें
+
+FILE EXPLORER - EXTRA
+---------------------
+Ctrl + 0                 Folder view default
+Alt + P                  Preview pane
+Alt + Shift + P          Details pane
+Ctrl + 1 ... 8            View style चुनें
+Ctrl + 9                 Extra-large icons view
+Ctrl + Mouse wheel        Icon size बदलें
+F2                       Rename
+Alt + Up                 Parent folder
+Shift + F10              Right-click context menu
+
+TEXT EDITING - EXTRA
+--------------------
+Ctrl + Left / Right      एक शब्द पीछे / आगे
+Ctrl + Up / Down         एक paragraph ऊपर / नीचे
+Shift + Home / End       Line select
+Ctrl + Shift + Home/End  Document का हिस्सा select
+Ctrl + Backspace         Previous word delete
+Ctrl + Delete             Next word delete
+Insert                   Overwrite mode toggle
+Ctrl + B                 Bold
+Ctrl + I                 Italic
+Ctrl + U                 Underline
+Ctrl + K                 Hyperlink insert
+Ctrl + Enter             Page break / submit
+Ctrl + Shift + V         Paste without formatting (support पर निर्भर)
+
+BROWSER - EXTRA
+---------------
+Ctrl + Shift + W          Browser window बंद
+Ctrl + 1 ... 8            उस क्रम का tab
+Ctrl + 9                  Last tab
+Alt + Home                Home page
+Ctrl + Shift + B          Bookmarks bar show/hide
+Ctrl + Shift + Delete     Clear browsing data
+Ctrl + Shift + R          Hard refresh
+Esc                       Page loading रोकें
+Ctrl + U                  Page source
+Ctrl + Shift + I          Developer tools
+
+SCREEN RECORDING & GAME BAR
+---------------------------
+Win + G                  Game Bar खोलें
+Win + Alt + R             Recording start/stop
+Win + Alt + PrtScn        Game Bar screenshot
+Win + K                  Wireless display/connect
+
+FUNCTION KEYS
+-------------
+F1                       Help
+F2                       Rename / edit cell
+F3                       Search (कुछ apps में)
+F4                       Address bar list / repeat action
+F5                       Refresh
+F6                       Screen elements बदलें
+F7                       Spell check / caret browsing
+F8                       Startup options (कुछ systems में)
+F9                       Refresh fields (Office)
+F10                      Menu bar activate
+F11                      Full screen
+F12                      Developer tools / Save As
+Fn + F1 ... F12          Laptop hardware actions (model पर निर्भर)
+Fn + Esc                 Fn Lock (कुछ laptops)
+
+MICROSOFT OFFICE & COMMON APPS
+-----------------------------
+Ctrl + Shift + S          Save As
+F4                        Last action repeat
+F7                        Spelling / grammar check
+F12                       Save As (Office)
+Ctrl + Shift + >          Font size बढ़ाएँ
+Ctrl + Shift + <          Font size घटाएँ
+Ctrl + E                  Center align
+Ctrl + L                  Left align
+Ctrl + R                  Right align
+Ctrl + J                  Justify
+Ctrl + Shift + C          Copy formatting (Office)
+Ctrl + Shift + V          Paste formatting (Office)
+
+ADDITIONAL ACCESSIBILITY
+------------------------
+Win + Ctrl + Enter        Narrator on/off
+Win + Ctrl + O            On-screen keyboard
+Win + Minus (-)           Magnifier zoom out
+Left Alt + Left Shift + PrtScn  High Contrast toggle
+Shift (5 times)           Sticky Keys toggle
+Right Shift (8 sec)       Filter Keys toggle
+Num Lock (5 sec)          Toggle Keys toggle
+Left Alt + Left Shift + Num Lock  Mouse Keys toggle
+
+EDITING NOTES
+-------------
+• Shortcut का असर app के अनुसार थोड़ा बदल सकता है।
+• Shift + Delete permanent delete करता है; इस्तेमाल से पहले ध्यान दें।
+• Clipboard history के लिए Win + V दबाकर Turn on चुनें।
+• इस list को समय-समय पर Windows updates और अपने apps के अनुसार update करें.
